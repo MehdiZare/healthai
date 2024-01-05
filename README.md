@@ -25,7 +25,6 @@ pipenv install
 ## Environment Variables
 You need to set the `API_KEY` to the API key for accessing mediastack. It can be saved in a `.env` file in the root of the project.
 
-```bash
 
 ## Usage
 
