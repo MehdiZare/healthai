@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pydantic = "*"
+requests = "*"
+python-dotenv = "*"
+pydantic-settings = "*"
+pandas = "*"
+spacy = "*"
+torch = "*"
+transformers = {extras = ["torch"], version = "*"}
+datasets = "*"
+tqdm = "*"
+jupyter = "*"
+jupyterlab = "*"
+notebook = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.7"
