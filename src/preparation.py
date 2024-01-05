@@ -11,7 +11,7 @@ keywords = [
 ]
 
 
-def prepare_training_data():
+def prepare_training_data() -> None:
 	training_data = []
 	for idx, keyword in tqdm(enumerate(keywords)):
 		logger.info(f"Fetching data for {keyword}")
@@ -30,7 +30,7 @@ def prepare_training_data():
 		json.dump(training_data, file)
 
 
-def load_training_data():
+def load_training_data() -> list:
 	with open(settings.TRAINING_DATA_FILE, 'r', encoding='utf-8') as file:
 		training_data = json.load(file)
 	return training_data
